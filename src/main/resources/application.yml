@@ -1,0 +1,21 @@
+server.port: 8080
+
+spring:
+  application:
+    name: BTM
+  datasource:
+    initialization-mode: always
+    url: jdbc:mysql://localhost:3306/btm
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    database: mysql
+
+logging:
+  level:
+    org.springframework.boot: INFO
+    org.hibernate.SQL: INFO

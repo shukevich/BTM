@@ -1,0 +1,51 @@
+Orders (auto and allo orders)
+-guid (random byte[16]) - unique
+-patient Guid (random byte[16]) (for auto)/ donor Guid (for allo)
+-entry date
+-status (OPEN, CLOSED, PENDSUB)
+-list of key-value pairs describing characteristics of the order. Examples of key (MANUFACTURER, COLLECTION_DATE, COLLECTION_SERVICE_PROVIDER)
+
+
+Transportation request (for auto and allo orders. One order can have multiple transportation requests)
+-guid of transportation partner (random byte[16])
+-status
+	REVREQ	Review Request
+	PLORDER	Place Order
+	SENDCONT Send Container
+	CONFCONT Confirm Container Delivery
+	CONFPUP	Confirm Product Pickup
+	CONFPDEL Confirm Product Delivery
+	CONTRETURN Confirm Container Return
+	CLOSED	Close Request
+	CANCELED Canceled
+-proposed Pickup date and time
+-tracking number (can have numbers and letters)
+-pickup address
+   -address
+   -city
+   -state
+   -country
+-pickup contact
+   -contact name
+   -contact phone
+   -contact email
+-deliver to address
+   -address
+   -city
+   -state
+   -country
+-deliver to contact
+   -contact name
+   -contact phone
+   -contact email
+   
+   
+   
+Stack: Java 11, Hibernate, Spring Boot, Spring, Oracle, Spock (for unit tests), Integration Tests(Spring TestRestTemplate, Wiremock(to mock external dependencies), Spring Data Rest (to persist test data and check data in database as a result of test execution)) 
+
+Create:
+-API to create/update auto/allo order
+-API to create/update transportation request for order
+-API to get all open allo/auto orders filtered by status, range of entry dates, patient/donor Guid
+-API to get transportation requests for order
+-API to get transportation requests for order filtered by status, transport partner guid, pickup/delivery country

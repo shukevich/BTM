@@ -1,0 +1,33 @@
+### STS ###
+.apt-generated
+.classpath
+.factorypath
+.project
+.springBeans
+.sts4-cache
+.log
+.bash_profile
+.sql
+.gradle
+/build/
+.out
+/logs/
+
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.log
+
+### Maven ###
+target/
+.ideaDataSources/
+/projectFilesBackup
+
+*.jar
+*.class
+*.war
+*.ear
+/out/

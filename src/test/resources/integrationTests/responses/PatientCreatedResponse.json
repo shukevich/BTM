@@ -1,0 +1,10 @@
+{
+  "created": "2020-12-29T15:52:59.06478+03:00",
+  "updated": null,
+  "id": 2,
+  "name": "Petr",
+  "surname": null,
+  "phone": null,
+  "diagnosis": "Some Disease",
+  "orders": []
+}

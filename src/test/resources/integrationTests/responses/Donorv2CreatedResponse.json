@@ -1,0 +1,10 @@
+{
+  "created": "2020-12-31T17:27:08.1732881+03:00",
+  "updated": null,
+  "id": 3,
+  "name": "Masha",
+  "surname": "Petrova",
+  "phone": "12345678",
+  "donorType": "Type2",
+  "orders": []
+}

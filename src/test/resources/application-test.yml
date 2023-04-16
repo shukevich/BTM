@@ -1,0 +1,22 @@
+server.port: 8081
+
+spring:
+  application:
+    name: BTM Test
+  datasource:
+    initialization-mode: always
+    url: jdbc:h2:mem:btmTest
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    database: h2
+
+
+logging:
+  level:
+    org.springframework.boot: INFO
+    org.hibernate.SQL: INFO
